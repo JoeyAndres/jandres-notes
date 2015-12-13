@@ -1,6 +1,5 @@
 # jandres-notes
 Sticky notes module for meteor.
-For demo visit <insert here later>.
 
 This thing is still in alpha, but is working great. At the moment, the use case it satisfy is that each user have a single board containing notes.
 
