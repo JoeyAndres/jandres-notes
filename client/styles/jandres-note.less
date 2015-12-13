@@ -1,0 +1,66 @@
+/**
+ * jandres-note.less
+ */
+
+.border-radius(@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.jandres-note {
+  padding: 1em;
+
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  display: inline-block;
+
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+  .border-radius(5px);
+
+  max-width: 512px;
+
+  font-size: 2em;
+
+  vertical-align: top;
+
+  background: #eeeeee;
+}
+
+.jandres-note-plus {
+  padding: 0.25em;
+
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+
+  display: inline-block;
+
+  box-shadow: 0 0 10px black;
+  overflow: hidden;
+  .border-radius(5px);
+
+  font-size: 2em;
+
+  vertical-align: top;
+
+  width: 64px;
+  height: 64px;
+}
+
+.jandres-note-entry {
+  textarea {
+    font-size: 1em;
+    max-width: 512px;
+    margin-bottom: 10px;
+  }
+
+  button#jandres-note-entry-post-button {
+    float: right;
+  }
+}
+
+.jandres-board {
+  padding: 1em;
+}

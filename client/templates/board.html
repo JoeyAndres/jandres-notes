@@ -1,0 +1,13 @@
+<template name="JandresBoard">
+    <div class="jandres-board">
+        {{#unless show_note_entry}}
+            {{> JandresNotePlus click_cb=note_plus_click_cb}}
+        {{/unless}}
+        {{#if show_note_entry}}
+            {{> JandresNoteEntry post_cb=note_post_click_cb}}
+        {{/if}}
+        {{#each notes}}
+            {{> JandresNote content=text}}
+        {{/each}}
+    </div>
+</template>
