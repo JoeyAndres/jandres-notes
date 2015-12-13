@@ -46,7 +46,9 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('ecmascript');
+  api.use('mongo');
   api.use('tinytest');
   api.use('jandres:notes');
-  api.addFiles('notes-tests.js');
+  api.addFiles('tests/collection_stub.js', 'client');
+  api.addFiles('tests/lib_test.js', 'client');
 });
