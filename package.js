@@ -13,8 +13,8 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
   api.use('ecmascript');
-  api.use(['fortawesome:fontawesome', 'blaze-html-templates'], 'client');
-  api.use(['mongo', 'iron:router', 'less', 'accounts-base'], ['client', 'server']);
+  api.use(['fortawesome:fontawesome@4.5.0', 'blaze-html-templates'], 'client');
+  api.use(['mongo', 'iron:router@1.0.12', 'less', 'accounts-base'], ['client', 'server']);
 
   // lib files (client and server).
   api.addFiles(['lib/lib.js']);
